@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BBS Melding Handbook</string>
+
+    <string name="shotlock_ability_warning">Shotlock commands cannot have any attached abilities</string>
+    <string name="results">Results</string>
+    <string name="abilities">Abilities</string>
+    <string name="chance">%1$d%% chance</string>
+
+    <string name="add_shimmering">Add Shimmering Crystal</string>
+    <string name="add_fleeting">Add Fleeting Crystal</string>
+    <string name="add_pulsing">Add Pulsing Crystal</string>
+    <string name="add_wellspring">Add Wellspring Crystal</string>
+    <string name="add_soothing">Add Soothing Crystal</string>
+    <string name="add_hungry">Add Hungry Crystal</string>
+    <string name="add_abounding">Add Abounding Crystal</string>
+</resources>

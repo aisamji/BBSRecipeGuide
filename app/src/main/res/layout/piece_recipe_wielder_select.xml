@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recipe_wielders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:background="@android:color/white">
+
+    <RadioButton
+        android:id="@+id/recipe_wielder_terra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terra"
+        />
+
+    <RadioButton
+        android:id="@+id/recipe_wielder_ventus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ventus"/>
+
+    <RadioButton
+        android:id="@+id/recipe_wielder_aqua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aqua"/>
+
+</RadioGroup>

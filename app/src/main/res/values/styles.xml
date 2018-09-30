@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- region Base application theme -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:radioButtonStyle">@style/AppTheme.RadioButton</item>
+        <item name="radioButtonStyle">@style/AppTheme.RadioButton</item>
+    </style>
+
+    <style name="AppTheme.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- region Recipe card styling -->
+
+    <style name="RecipeCard" parent="CardView.Light">
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="RecipeCard.Holder">
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="RecipeCard.Text">
+        <!-- Common attributes to all text elements -->
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="RecipeCard.Result" parent="RecipeCard.Text">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RecipeCard.Ingredients" parent="RecipeCard.Text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="RecipeCard.Success" parent="RecipeCard.Text">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- region Filter screen styling -->
+
+    <style name="FilterTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/filter_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textViewStyle">@style/FilterTheme.TextView</item>
+        <item name="android:checkboxStyle">@style/FilterTheme.CheckBox</item>
+        <item name="checkboxStyle">@style/FilterTheme.CheckBox</item>
+        <item name="android:buttonStyle">@style/FilterTheme.Button</item>
+        <item name="buttonStyle">@style/FilterTheme.Button</item>
+        <item name="android:radioButtonStyle">@style/FilterTheme.RadioButton</item>
+        <item name="radioButtonStyle">@style/FilterTheme.RadioButton</item>
+        <item name="android:windowAnimationStyle">@style/FilterTheme.Animation</item>
+    </style>
+
+    <style name="FilterTheme.Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_in</item>
+    </style>
+
+    <style name="FilterTheme.TextView" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="FilterTheme.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/filter_command_checkbox_back</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="FilterTheme.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:background">@drawable/filter_command_checkbox_back</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="FilterTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- region Recipe Detail styling -->
+
+    <style name="RecipeDetailCard" parent="RecipeCard" />
+    <style name="RecipeDetailCard.Holder" parent="RecipeCard.Holder" />
+
+    <style name="RecipeDetailCard.Ingredient" parent="RecipeCard.Text">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="RecipeDetailCard.SectionHeader" parent="RecipeCard.Text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="RecipeDetailCard.Section" parent="AppTheme">
+        <item name="android:textViewStyle">@style/RecipeDetailCard.LineItem</item>
+    </style>
+
+    <style name="RecipeDetailCard.LineItem" parent="RecipeCard.Text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="RecipeDetailCard.Warning" parent="RecipeCard.Text">
+        <item name="android:textColor">@color/shotlock_command</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <!-- endregion -->
+
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recipe.RecipeDetailActivity"
+    android:background="@color/card_view_container_background">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/RecipeDetailCard">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            style="@style/RecipeDetailCard.Holder">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- region Ingredients -->
+
+                <TextView
+                    android:id="@+id/recipe_detail_ingredient_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RecipeDetailCard.Ingredient" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RecipeDetailCard.Ingredient"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/recipe_detail_ingredient_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RecipeDetailCard.Ingredient" />
+
+                <!-- endregion -->
+
+                <!-- region Recipes -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/RecipeDetailCard.SectionHeader"
+                    android:text="@string/results" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    />
+
+                <TableLayout
+                    android:theme="@style/RecipeDetailCard.Section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow android:id="@+id/recipe_detail_alt_1">
+                        <TextView android:tag="name" android:textAlignment="textEnd" />
+                        <TextView android:text=" - " />
+                        <TextView android:tag="chance" />
+                    </TableRow>
+
+                    <TableRow android:id="@+id/recipe_detail_alt_2">
+                        <TextView android:tag="name" android:textAlignment="textEnd" />
+                        <TextView android:text=" - " />
+                        <TextView android:tag="chance" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <!-- endregion -->
+
+                <!-- region Abilities -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RecipeDetailCard.SectionHeader"
+                    android:text="@string/abilities" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    />
+
+                <TextView
+                    style="@style/RecipeDetailCard.Warning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shotlock_ability_warning" />
+
+                <TableLayout
+                    android:theme="@style/RecipeDetailCard.Section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+                        <TextView android:id="@+id/recipe_detail_shimmering"
+                                  android:textAlignment="textEnd" />
+                        <TextView android:text=" - " />
+                        <TextView android:layout_weight="1" android:text="@string/add_shimmering" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView android:id="@+id/recipe_detail_fleeting"
+                                  android:textAlignment="textEnd" />
+                        <TextView android:text=" - " />
+                        <TextView android:layout_weight="1" android:text="@string/add_fleeting" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView android:id="@+id/recipe_detail_pulsing"
+                                  android:textAlignment="textEnd" />
+                        <TextView android:text=" - " />
+                        <TextView android:layout_weight="1" android:text="@string/add_pulsing" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView android:id="@+id/recipe_detail_wellspring"
+                                  android:textAlignment="textEnd" />
+                        <TextView android:text=" - " />
+                        <TextView android:layout_weight="1" android:text="@string/add_wellspring" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView android:id="@+id/recipe_detail_soothing"
+                                  android:textAlignment="textEnd" />
+                        <TextView android:text=" - " />
+                        <TextView android:layout_weight="1" android:text="@string/add_soothing" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView android:id="@+id/recipe_detail_hungry"
+                                  android:textAlignment="textEnd" />
+                        <TextView android:text=" - " />
+                        <TextView android:layout_weight="1" android:text="@string/add_hungry" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView android:id="@+id/recipe_detail_abounding"
+                                  android:textAlignment="textEnd" />
+                        <TextView android:text=" - " />
+                        <TextView android:layout_weight="1" android:text="@string/add_abounding" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <!-- endregion -->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

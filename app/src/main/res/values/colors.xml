@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="card_view_container_background">#bdbdbd</color>
+
+    <color name="filter_background">#80000000</color>
+
+    <color name="filter_command_unchecked">#ffffff</color>
+    <color name="filter_command_checked">#90caf9</color>
+
+    <color name="attack_command">#d50000</color>
+    <color name="magic_command">#303f9f</color>
+    <color name="action_command">#afb42b</color>
+    <color name="shotlock_command">#43a047</color>
+</resources>
