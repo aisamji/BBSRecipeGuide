@@ -29,7 +29,8 @@
                     android:id="@+id/recipe_detail_ingredient_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/RecipeDetailCard.Ingredient" />
+                    style="@style/RecipeDetailCard.Ingredient"
+                    android:background="@android:color/darker_gray"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -41,7 +42,8 @@
                     android:id="@+id/recipe_detail_ingredient_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/RecipeDetailCard.Ingredient" />
+                    style="@style/RecipeDetailCard.Ingredient"
+                    android:background="@android:color/darker_gray"/>
 
                 <!-- endregion -->
 
@@ -64,16 +66,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <TableRow android:id="@+id/recipe_detail_alt_1">
-                        <TextView android:tag="name" android:textAlignment="textEnd" />
+                    <TableRow
+                        android:id="@+id/recipe_detail_alt_1"
+                        android:background="@android:color/darker_gray">
+                        <TextView
+                            android:tag="name"
+                            android:textAlignment="textEnd" />
                         <TextView android:text=" - " />
-                        <TextView android:tag="chance" />
+                        <TextView
+                            android:tag="chance" />
                     </TableRow>
 
-                    <TableRow android:id="@+id/recipe_detail_alt_2">
-                        <TextView android:tag="name" android:textAlignment="textEnd" />
+                    <TableRow
+                        android:id="@+id/recipe_detail_alt_2"
+                        android:background="@android:color/darker_gray">
+                        <TextView
+                            android:tag="name"
+                            android:textAlignment="textEnd" />
                         <TextView android:text=" - " />
-                        <TextView android:tag="chance" />
+                        <TextView
+                            android:tag="chance" />
                     </TableRow>
 
                 </TableLayout>
@@ -106,50 +118,60 @@
                     android:layout_height="wrap_content">
 
                     <TableRow>
-                        <TextView android:id="@+id/recipe_detail_shimmering"
-                                  android:textAlignment="textEnd" />
+                        <TextView
+                            android:id="@+id/recipe_detail_shimmering"
+                            android:textAlignment="textEnd"
+                            android:text="                              "
+                            android:background="@android:color/darker_gray"/>
                         <TextView android:text=" - " />
                         <TextView android:layout_weight="1" android:text="@string/add_shimmering" />
                     </TableRow>
 
                     <TableRow>
-                        <TextView android:id="@+id/recipe_detail_fleeting"
-                                  android:textAlignment="textEnd" />
+                        <TextView
+                            android:id="@+id/recipe_detail_fleeting"
+                            android:textAlignment="textEnd"
+                            android:background="@android:color/darker_gray"/>
                         <TextView android:text=" - " />
                         <TextView android:layout_weight="1" android:text="@string/add_fleeting" />
                     </TableRow>
 
                     <TableRow>
                         <TextView android:id="@+id/recipe_detail_pulsing"
-                                  android:textAlignment="textEnd" />
+                                  android:textAlignment="textEnd"
+                                  android:background="@android:color/darker_gray"/>
                         <TextView android:text=" - " />
                         <TextView android:layout_weight="1" android:text="@string/add_pulsing" />
                     </TableRow>
 
                     <TableRow>
                         <TextView android:id="@+id/recipe_detail_wellspring"
-                                  android:textAlignment="textEnd" />
+                                  android:textAlignment="textEnd"
+                                  android:background="@android:color/darker_gray"/>
                         <TextView android:text=" - " />
                         <TextView android:layout_weight="1" android:text="@string/add_wellspring" />
                     </TableRow>
 
                     <TableRow>
                         <TextView android:id="@+id/recipe_detail_soothing"
-                                  android:textAlignment="textEnd" />
+                                  android:textAlignment="textEnd"
+                                  android:background="@android:color/darker_gray"/>
                         <TextView android:text=" - " />
                         <TextView android:layout_weight="1" android:text="@string/add_soothing" />
                     </TableRow>
 
                     <TableRow>
                         <TextView android:id="@+id/recipe_detail_hungry"
-                                  android:textAlignment="textEnd" />
+                                  android:textAlignment="textEnd"
+                                  android:background="@android:color/darker_gray"/>
                         <TextView android:text=" - " />
                         <TextView android:layout_weight="1" android:text="@string/add_hungry" />
                     </TableRow>
 
                     <TableRow>
                         <TextView android:id="@+id/recipe_detail_abounding"
-                                  android:textAlignment="textEnd" />
+                                  android:textAlignment="textEnd"
+                                  android:background="@android:color/darker_gray"/>
                         <TextView android:text=" - " />
                         <TextView android:layout_weight="1" android:text="@string/add_abounding" />
                     </TableRow>

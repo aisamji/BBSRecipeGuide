@@ -13,4 +13,6 @@
     <string name="add_soothing">Add Soothing Crystal</string>
     <string name="add_hungry">Add Hungry Crystal</string>
     <string name="add_abounding">Add Abounding Crystal</string>
+
+    <string name="placeholder_text">     </string>
 </resources>
